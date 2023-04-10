@@ -1,48 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #8c52ff;
+	background-color: rgb(37, 38, 47);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-section {
-    text-align: center;
-    border-radius: 10px;
-    width: 400px;
-    margin: auto;
-    background-color: #fff;
-    margin-top: 75px;
-    box-shadow: 0px 10px 36px 16px rgba(0,0,0,0.1);
+
+#tictactoe {
+	color: white;
+	font-family: 'Varela Round', sans-serif;
 }
-.game--title {
-    padding-top: 20px;
+#game-board {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 275px;
+	height: 275.5px;
+	border: 0.01px solid rgba(43, 40, 51, 0.5);
+	
 }
-.game--container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 150px;
-    margin: 120px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+
+.row {
+	display: flex;
 }
+
 .cell {
-    font-family: "Poppins", sans-serif;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 0 0 1px #333333;
-    border: 1px solid #333333;
-    cursor: pointer;
-    line-height: 50px;
-    font-size: 20px;
+	border: 0.001em solid rgb(171, 171, 171);
+	width: 90px;
+	height: 90px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	font-family: 'Varela Round', sans-serif;
+	color: white;
+	background-color: rgb(39, 42, 61);
+	border-width: 0.1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-button {
-    margin-bottom: 20px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #8c52ff;
-    cursor: pointer;
+
+.cell:hover {
+	background-color: lightgray;
 }
-button:hover {
-    transition: 0.25s;
-    background-color: #c1a2fe;
+
+#reset-button {
+	margin-top: 20px;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Varela Round', sans-serif;
+	background-color: rgb(0, 179, 0);
+	color: white;
 }
