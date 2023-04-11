@@ -6,6 +6,7 @@ body {
 	flex-direction: column;
 	position: relative;
 	font-family: 'Varela Round', sans-serif;
+	margin-top: 180px;
 }
 
 #tictactoe {
@@ -19,6 +20,7 @@ body {
 	width: 275px;
 	height: 275.5px;
 	border: 0.01px solid rgba(43, 40, 51, 0.5);
+	visibility: hidden;
 	
 }
 
@@ -47,7 +49,7 @@ body {
 	background-color: lightgray;
 }
 
-#reset-button {
+#resetButton {
 	margin-top: 20px;
 	font-size: 20px;
 	padding: 10px 20px;
@@ -56,6 +58,7 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	background-color: rgb(0, 179, 0);
 	color: white;
+	visibility: hidden;
 }
 
 #undo {
@@ -67,7 +70,7 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	background-color: rgb(0, 179, 0);
 	color: white;
-	display: none;
+	visibility: hidden;
 }
 
 #redo {
@@ -79,7 +82,7 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	background-color: rgb(0, 179, 0);
 	color: white;
-	display: none;
+	visibility: hidden;
 }
 
 #player {
@@ -91,6 +94,7 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	background-color: rgb(0, 179, 0);
 	color: white;margin-bottom: 25px;
+	visibility: hidden;
 }
 
 #playermodal {
@@ -98,7 +102,7 @@ body {
 	position: absolute;
 	top: 32%;
 	height: 280px;
-	width: 320px;
+	width: 350px;
 	background-color: rgb(39, 42, 61);
 	color: white;
 	display: flex;
@@ -106,8 +110,10 @@ body {
 	align-items: center;
 	flex-direction: column;
 	border-radius: 10px;
-	visibility: hidden;
-
+    /* visibility: hidden; */
+}
+#playermodal h3 {
+	text-align: center;
 }
 #playermodal .playerside {
 	margin-top: 20px;
